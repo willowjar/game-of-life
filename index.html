@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Game of Life</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="gameController.js"></script>
+<script src="gameView.js"></script>
+<script src="grid.js"></script>
+<script src="utility.js"></script>
+<link rel="stylesheet" type="text/css" href="index.css">
+	<meta charset="UTF-8">
+	<meta name="description" content="Willow Jarvis | Game of Life">
+	<meta name="keywords" content="Game of Life, 6.170">
+	<meta name="author" content="Willow Jarvis">
+</head>
+<body>
+	<h1>Conway's Game of Life</h1>
+	<h2>To play the game, please either choose one of a collection of preset starting states from below, or create your own starting state by highlighting squares to make them alive.</h2>
+	<table >
+	</table>
+		<div id = "pause-and-pick-buttons">
+			<!--glyphicons used from bootstrap comes from http://glyphicons.com/ -->
+			<button id="play-pause-button" class="two_buttons btn btn-primary"><span id="play-pause-icon" class="glyphicon glyphicon-play"></span></button>
+			<div class="two_buttons dropdown">
+			  <button class="t btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Pick a starting state
+			  <span class="caret"></span></button>
+			  <ul class="dropdown-menu">
+			    <li><a id="replicator">replicator</a></li>
+			    <li><a id="space-dream">space&nbsp;dream</a></li>
+			    <li><a id="dashing-through-snow">dashing&nbsp;through&nbsp;the&nbsp;snow</a></li>
+			  </ul>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+h1,h2{
+	margin: 30px 10px 20px 10px;
+}
+.two_buttons{
+	display: inline-block;
+	margin-right:20px;
+}
+#pause-and-pick-buttons{
+	margin: 30px 10px 300px 10px;
+}
+
+/*below css code to make table cell square uses the template presented
+ from http://stackoverflow.com/questions/22835430/make-table-cells-square */
+table {
+  width: 80%;
+  margin:10px 10px 10px 10px;
+}
+td {
+  width: .8%;
+  position: relative;
+  background: gold;
+}
+
+td:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+td .content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+td:hover{
+  border:1px solid black;
+}
